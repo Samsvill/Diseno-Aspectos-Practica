@@ -1,4 +1,2 @@
-Tipo de transaccion: Transaccion - Hora: 22:47:56.990222600
-Tipo de transaccion: Retiro de dinero - Hora: 22:49:05.688079200
-Tipo de transaccion: Transaccion - Hora: 22:51:14.413750
-Tipo de transaccion: Retiro de dinero - Hora: 22:53:23.881686100
+Tipo de transaccion: Transaccion - Hora: 15:24:31.673282300
+Tipo de transaccion: Retiro de dinero - Hora: 15:25:10.195902700
