@@ -1,5 +1,8 @@
 package com.bank;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -94,4 +97,24 @@ public class Bank {
         System.out.println("------------------------------------");
     }
     
+    public static void escribirArchivo(String archivo, String linea) {
+        FileWriter writer = null;
+        BufferedWriter bfr = null;
+        try {
+            writer = new FileWriter(archivo, true);
+            bfr = new BufferedWriter(writer);
+            bfr.write(linea);
+            bfr.newLine();
+        } catch (IOException io) {
+            System.out.println("Lo sentimos, hubo un error en la escritura de datos");
+        } finally {
+            try {
+                bfr.close();
+                writer.close();
+            } catch (IOException io) {
+                System.out.println("Lo sentimos, hubo un error en la escritura de datos");
+            }
+        }
+
+    }
 }
